@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>팝업 실험물 - 스크롤 묻힘</title>
 
+  <!-- Microsoft Clarity -->
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
           c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -42,7 +43,6 @@
       text-align: center;
       padding: 10px;
       font-size: 13px;
-      letter-spacing: 0.5px;
     }
 
     .condition-banner strong {
@@ -52,7 +52,7 @@
     .shopping-bg {
       width: 100%;
       height: 600px;
-      background-image: url("쇼핑몰배경이미지.png");
+      background-image: url("shopbgimage.png"); /* 변경됨 */
       background-size: cover;
       background-position: top center;
       background-repeat: no-repeat;
@@ -86,7 +86,6 @@
     }
 
     .popup-box {
-      position: relative;
       width: 420px;
       max-width: 90%;
     }
@@ -108,13 +107,13 @@
       font-size: 11px;
       padding: 5px 12px;
       border-radius: 20px;
-      letter-spacing: 0.5px;
       pointer-events: none;
       white-space: nowrap;
       z-index: 110;
     }
   </style>
 </head>
+
 <body>
 
   <div class="experiment-wrap">
@@ -125,9 +124,10 @@
     <div class="shopping-bg" id="shoppingBg">
       <div class="scroll-spacer"></div>
 
+      <!-- 팝업 -->
       <div class="popup-overlay" id="popupOverlay">
         <div class="popup-box">
-          <img src="팝업광고.png" alt="팝업 광고">
+          <img src="popupad.png" alt="팝업 광고"> <!-- 변경됨 -->
         </div>
       </div>
 
